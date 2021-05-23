@@ -1,0 +1,65 @@
+p {
+  position: relative;
+  font-family: Lato;
+  top: 30%;
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  }
+  
+  .example-viewport {
+    box-sizing:border-box;
+    height: 100%;
+    width: 100%;
+    background-color:  rgb(199, 238, 205);
+  }
+  
+.example-item {
+
+  height: 50px;
+  background-color:  rgba(67,162,3,1);
+ color: white;
+ border-bottom: 2px solid white;
+  }
+  
+.checked-item{
+  height: 50px;
+  background-color:  rgb(117, 235, 38);
+  color: white;
+  border-bottom: 2px solid white
+}
+
+  .container{
+    height: 100%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+  }
+
+  .friend{
+
+    height: 50px;
+
+  }
+  .message{
+    position: relative;
+    box-sizing:border-box;
+    float: right;
+    margin-right: 4%;
+    font-size: 30px;
+    color: #ffffff;
+    top: -40%;
+
+  }
+
+  @media (max-width : 400px) {
+    .example-viewport{
+      margin-top: 0%;
+    }
+    .container{
+      margin-top: 0px;
+    }
+    p{
+      margin-left: 2%;
+    }
+  
+    
+}

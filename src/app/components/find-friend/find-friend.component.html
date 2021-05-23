@@ -1,0 +1,12 @@
+<app-header></app-header>
+<div class="container">
+    <input type="firstName" name="firstName" autocomplete="off" [(ngModel)]="firstName" placeholder="User name"
+        (ngModelChange)="changeFriendName()">
+
+    <cdk-virtual-scroll-viewport itemSize="4" class='example-viewport'>
+        <div (click)=chooseUsers(user) *cdkVirtualFor="let user of users">
+            <p> {{user.firstName}}</p>
+        </div>
+    </cdk-virtual-scroll-viewport>
+
+</div>

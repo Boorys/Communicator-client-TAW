@@ -1,0 +1,12 @@
+<div class="container">
+
+    <cdk-virtual-scroll-viewport itemSize="4" class='example-viewport'>
+        <div (click)=chooseFriend(friend) *cdkVirtualFor="let friend of friends"
+            [ngClass]="friend.friendId == checkedFrendId ? 'checked-item': 'example-item'">
+          
+                <p> {{friend.friendName}} </p>
+          
+            <div class="message"><i *ngIf="friend.messageWait" class="far fa-envelope"></i></div>
+        </div>
+    </cdk-virtual-scroll-viewport>
+</div>

@@ -1,0 +1,36 @@
+<div class="bgConatainer">
+
+    <div class=container>
+        <div>
+
+            <input type="text" name="userName" [(ngModel)]="userName" placeholder="user name">
+        </div>
+
+        <div>
+
+            <input type="text" name="email" [(ngModel)]="email" placeholder="email">
+        </div>
+
+        <div>
+
+            <input type="password" name="password" [(ngModel)]="password" placeholder="password">
+        </div>
+        <div>
+
+            <input type="password" name="confirmPassword" [(ngModel)]="confirmPassword" placeholder="confirm password">
+            <div class="info">
+                <p>{{message}}</p>
+            </div>
+
+        </div>
+
+
+        <div class="buttonContainer">
+
+            <button (click)=handleRegister()>Register</button>
+
+        </div>
+
+
+    </div>
+</div>
